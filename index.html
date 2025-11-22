@@ -1,34 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flaming Pizza</title>
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flamin’ Pizza – Downtown Frederick</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-    <header>
-        <h1>Flaming Pizza</h1>
-        <p>Fresh • Hot • Downtown Frederick</p>
-    </header>
+  <!-- NAVBAR -->
+  <header class="site-header">
+    <div class="nav-inner">
+      <div class="brand">
+        <img src="images/logo.png" alt="Flamin' Pizza logo" class="logo" />
+        <div class="brand-text">
+          <span class="brand-name">Flamin’ Pizza</span>
+          <span class="brand-tagline">Hot • Fresh • Downtown Frederick</span>
+        </div>
+      </div>
 
-    <section id="hero">
-        <h2>Authentic Pizza, Made Daily</h2>
-        <p>Order online or stop by our Frederick Downtown location.</p>
-        <a href="#" class="btn">Order Now</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#deals">Deals</a></li>
+          <li><a href="#visit">Visit</a></li>
+          <li><a href="#order">Order</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <h1>Hot, Cheesy, and Flamin’ Good.</h1>
+        <p>
+          Hand-tossed pies, subs, wings, and late-night slices in the heart of
+          downtown Frederick.
+        </p>
+        <div class="hero-actions">
+          <a
+            href="https://order.toasttab.com/online/flamin-pizza-36-south-market-street"
+            class="btn primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Order Online
+          </a>
+          <a href="tel:+12404554444" class="btn ghost">
+            Call (240) 455-4444
+          </a>
+        </div>
+        <div class="hero-tags">
+          <span class="pill">Pickup</span>
+          <span class="pill">Delivery</span>
+          <span class="pill">Dine-In</span>
+          <span class="pill highlight">Late Night Friday & Saturday</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- MENU HIGHLIGHTS -->
+    <section id="menu" class="section">
+      <div class="section-header">
+        <h2>Menu Highlights</h2>
+        <p class="section-subtitle">
+          Just a preview — menu items &amp; prices may change. For the latest, check our online ordering page.
+        </p>
+      </div>
+
+      <div class="card-grid">
+        <article class="card">
+          <h3>Cheese &amp; Pepperoni</h3>
+          <p>Classic 10&quot; pies loaded with gooey cheese or pepperoni.</p>
+          <p class="meta">From <strong>$9.99</strong></p>
+        </article>
+
+        <article class="card">
+          <h3>Specialty Pizzas</h3>
+          <p>Veggie, BBQ Chicken, Meatster and more.</p>
+          <p class="meta">Around <strong>$12.99–$17.99</strong></p>
+        </article>
+
+        <article class="card">
+          <h3>Build Your Own</h3>
+          <p>Personal 10&quot;, Large 14&quot;, or Monster 20&quot; with your toppings.</p>
+          <p class="meta">From <strong>$9.99</strong></p>
+        </article>
+
+        <article class="card">
+          <h3>Subs, Wings &amp; Sides</h3>
+          <p>8&quot; subs, crispy wings, fries, bread sticks, desserts and more.</p>
+          <p class="meta">Most around <strong>$8–$10</strong></p>
+        </article>
+      </div>
+
+      <div class="menu-cta">
+        <a
+          href="https://order.toasttab.com/online/flamin-pizza-36-south-market-street"
+          class="link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View full menu &amp; order online →
+        </a>
+      </div>
     </section>
 
-    <section id="hours">
-        <h2>Hours</h2>
-        <p>Mon–Fri: 11AM – 10PM</p>
-        <p>Sat–Sun: 12PM – 11PM</p>
+    <!-- DEALS -->
+    <section id="deals" class="section section-alt">
+      <div class="section-header">
+        <h2>Popular Deals</h2>
+        <p class="section-subtitle">
+          Easy options for family nights, parties, and late-night cravings.
+        </p>
+      </div>
+
+      <div class="card-grid">
+        <article class="card soft">
+          <h3>Family Special</h3>
+          <p>2 large 2-topping pizzas, 9 wings, and a 2-liter soda.</p>
+          <p class="meta">Around <strong>$27.99</strong></p>
+        </article>
+
+        <article class="card soft">
+          <h3>Party Special</h3>
+          <p>4 medium 1-topping pizzas to feed the whole crew.</p>
+          <p class="meta">Around <strong>$25.99</strong></p>
+        </article>
+
+        <article class="card soft">
+          <h3>Slice &amp; Drink</h3>
+          <p>Quick combo for lunch or a fast bite.</p>
+          <p class="meta">From <strong>$8.00</strong></p>
+        </article>
+      </div>
     </section>
 
-    <section id="location">
-        <h2>Location</h2>
-        <p>Downtown Frederick, MD</p>
+    <!-- VISIT / HOURS / CONTACT -->
+    <section id="visit" class="section">
+      <div class="section-header">
+        <h2>Visit Flamin’ Pizza</h2>
+        <p class="section-subtitle">
+          Stop by, grab a box, or order ahead.
+        </p>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-card">
+          <h3>Address</h3>
+          <p>36 S Market St</p>
+          <p>Frederick, MD 21701</p>
+          <a
+            class="link"
+            href="https://maps.apple.com/?q=36+S+Market+St+Frederick+MD+21701"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open in Maps →
+          </a>
+        </div>
+
+        <div class="info-card">
+          <h3>Hours</h3>
+          <p><strong>Mon:</strong> Closed</p>
+          <p><strong>Tue–Thu:</strong> 12:00 pm – 10:00 pm</p>
+          <p><strong>Fri–Sat:</strong> 12:00 pm – 2:00 am</p>
+          <p><strong>Sun:</strong> 12:00 pm – 8:00 pm</p>
+          <p class="note">
+            Hours may change, especially on holidays or special events. Call to confirm late-night times.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <h3>Contact</h3>
+          <p>Phone: <a href="tel:+12404554444" class="link">(240) 455-4444</a></p>
+          <p>Online ordering powered by Toast.</p>
+          <a
+            class="link"
+            href="https://order.toasttab.com/online/flamin-pizza-36-south-market-street"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Start an order →
+          </a>
+        </div>
+      </div>
     </section>
 
+    <!-- ORDER CTA -->
+    <section id="order" class="section order-cta">
+      <h2>Craving Pizza?</h2>
+      <p>Tap below to build your order and we’ll fire up the oven.</p>
+      <a
+        href="https://order.toasttab.com/online/flamin-pizza-36-south-market-street"
+        class="btn primary"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Order Online
+      </a>
+      <p class="note" style="margin-top:10px;">
+        Menu items, prices, and hours are subject to change. For the most accurate info, please check our online ordering page or call the store.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Flamin’ Pizza · Downtown Frederick, MD · Info last updated: November 2025</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
