@@ -105,7 +105,11 @@ body {
 /* HERO */
 
 .hero {
-  padding: 40px 20px 20px;
+  padding: 60px 20px 40px;
+  background-image: url('images/hero-bg.png');
+  background-size: 400px;
+  background-repeat: repeat;
+  background-blend-mode: multiply;
 }
 
 .hero-inner {
@@ -239,7 +243,23 @@ body {
 }
 
 .card.soft {
-  border-style: dashed;
+  border: 2px dashed var(--accent-red);
+  background: #fffdf5;
+  position: relative;
+}
+
+.card.soft::after {
+  content: "COUPON";
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  background: var(--accent-red);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 4px;
+  transform: rotate(5deg);
 }
 
 .card h3 {
